@@ -1,0 +1,213 @@
+.card-custom {
+    margin-top: 7rem;
+    max-width: 65rem;
+}
+
+.img-full-width {
+    width: 32rem;
+    height: 28rem;
+}
+
+.card-title {
+    margin-top: 3rem;
+    color: #ed5353;
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 1.2rem;
+}
+
+.digital {
+    font-size: xx-large;
+}
+
+.contact_us {
+    color: aliceblue;
+    background-color: #ed5353;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 7px;
+  padding: 4.25rem;
+}
+
+
+.pagination {
+    display: flex;
+    gap: 20px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: red;
+}
+
+.dot.active::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid red;
+    border-radius: 50%;
+    background-color: white;
+    z-index: -1;
+}
+
+.image-container {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.image-container img {
+  width: 226px;
+  height: 300px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+
+.card2 {
+  width: 17rem;
+  height: 11rem;
+  background: #f5f5f5;
+  padding: 2rem 4.0rem;
+  margin-right: 2rem;
+  transition: box-shadow .3s ease, transform .2s ease;
+ }
+ 
+  .card-container2 {
+       display: inline-flex; /* Display children inline */
+       justify-content: space-around; /* Space them evenly */
+       width: 100%; /* Ensure they take the full width of the container */
+     }
+ 
+ .card-info2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform .2s ease, opacity .2s ease;
+ }
+ 
+ /*Text*/
+ .card-title2 {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 2rem;
+ 
+ }
+ 
+ /*Hover*/
+ .card2:hover {
+  box-shadow: 0 8px 50px #23232333;
+ }
+ 
+ .card2:hover .card-info2 {
+  transform: translateY(-5%);
+ }
+ 
+ .card-social__item svg:hover {
+  fill: #232323;
+  transform: scale(1.1);
+ }
+ 
+ .card-avatar:hover {
+  transform: scale(1.1);
+ }
+
+
+.modal-header {
+    border-bottom: none!important;
+  }
+
+
+#work_email {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+
+  #first_Name {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+
+  #last_Name {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+
+  #work_email::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  #first_Name::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+
+  #last_Name::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  
+  #work_email:focus {
+    border-bottom: 2px solid #4CAF50;
+    outline: none;
+    box-shadow: none;
+  }
+
+  #subscribeCheckbox {
+    border: 1px solid red;
+    border-radius: 0;
+    width: 18px;
+    height: 18px;
+  }
+  
+  #subscribeCheckbox:checked {
+    background-color: red;
+    border-color: red;
+  }
+  
+  #subscribeCheckbox:checked::after {
+    content: "\2713"; /* tick mark */
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
